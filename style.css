@@ -1,0 +1,53 @@
+/* Global Styles for the Whole Website */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f7f4;
+    color: #2d3436;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    background-color: #1b4d3e;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+main {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+a {
+    color: #2d6a4f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Common Table Styles (for schedule.html) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th {
+    background-color: #1b4d3e;
+    color: white;
+    padding: 12px;
+}
+
+tr:nth-child(even) { background-color: #f2f2f2; }
+tr:hover { background-color: #d1e7dd; }
