@@ -1,0 +1,6 @@
+.btn { padding: 12px 24px; font-size: 1rem; border-radius: 50px; cursor: pointer; transition: 0.3s; margin: 10px; border: none; }
+.btn-primary { background: #1b4d3e; color: white; }
+.btn-primary:hover { background: #2d6a4f; box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+.btn-outline { background: transparent; border: 2px solid #1b4d3e; color: #1b4d3e; }
+.btn-outline:focus { background: #d1e7dd; outline: none; }
+.btn-danger:disabled { background: #ccc; cursor: not-allowed; }

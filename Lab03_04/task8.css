@@ -1,0 +1,8 @@
+.navbar { background: #1b4d3e; padding: 15px 50px; display: flex; justify-content: space-between; align-items: center; color: white; }
+.nav-links { list-style: none; display: flex; gap: 20px; }
+.nav-links a { color: white; text-decoration: none; padding: 10px; transition: 0.3s; }
+.nav-links a:hover, .active { background: rgba(255,255,255,0.2); border-radius: 5px; }
+.dropdown { position: relative; }
+.dropdown-content { display: none; position: absolute; background: white; min-width: 150px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); top: 100%; }
+.dropdown-content a { color: #333; display: block; }
+.dropdown:hover .dropdown-content { display: block; }

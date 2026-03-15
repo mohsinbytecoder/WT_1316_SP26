@@ -1,80 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Profile - Mohsin Khan</title>
-        <style>
-            body {
-                font-family: 'Segoe UI', Arial, sans-serif;
-                line-height: 1.6;
-                color: #2d3436;
-                max-width: 800px;
-                margin: 0 auto;
-                padding: 20px;
-                background-color: #f0f7f4; /* Light Mint Background */
-            }
-    
-            header {
-                background-color: #1b4d3e; /* Forest Green */
-                color: white;
-                padding: 2rem;
-                text-align: center;
-                border-radius: 12px;
-                margin-bottom: 30px;
-                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            }
-    
-            main {
-                background: white;
-                padding: 40px;
-                border-radius: 12px;
-                box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-                text-align: center;
-            }
-    
-            .profile-img {
-                border-radius: 50%; /* Makes image circular */
-                border: 5px solid #d1e7dd;
-                margin-bottom: 20px;
-                object-fit: cover;
-            }
-    
-            h2 {
-                color: #1b4d3e;
-                border-bottom: 2px solid #52b788;
-                display: inline-block;
-                padding-bottom: 5px;
-                margin-top: 30px;
-            }
-    
-            a {
-                color: #2d6a4f;
-                text-decoration: none;
-                font-weight: bold;
-            }
-    
-            footer {
-                margin-top: 40px;
-                text-align: center;
-                color: #6c757d;
-                font-size: 0.9rem;
-            }
-        </style>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Mohsin Khan</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #2d3436;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f7f4; /* Light Mint */
+        }
+
+        header {
+            background-color: #1b4d3e; /* Forest Green */
+            color: white;
+            padding: 2.5rem;
+            text-align: center;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        main {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        /* Task 11: Image Styling & Effects */
+        .profile-pic {
+            border-radius: 50%; /* Circular */
+            border: 5px solid #d1e7dd;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            object-fit: cover;
+        }
+
+        .profile-pic:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+
+        h2 {
+            color: #1b4d3e;
+            border-bottom: 2px solid #52b788;
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+
+        .links a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #1b4d3e;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .links a:hover {
+            background-color: #2d6a4f;
+        }
+
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            color: #636e72;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
 <body>
 
     <header>
-        <h1>Mohsin Khan</h1> </header>
+        <h1>Mohsin Khan</h1>
+        <p>4th Semester BS Computer Science | UET Peshawar</p>
+    </header>
 
     <main>
-        <img src="profile.jpg" alt="Profile Picture" width="150"> <h2>About Me</h2>
-        <p>I am a student at UET Peshawar, currently exploring web technologies and version control systems as part of my computer science degree.</p> <h2>Contact Information</h2> <p>Email: <a href="mailto:mohsin@example.com">mohsin@example.com</a></p>
-        <p>GitHub: <a href="https://github.com/mohsinbytecoder">mohsinbytecoder</a></p>
+        <img src="profile.jpg" alt="Mohsin Khan" width="180" height="180" class="profile-pic">
+
+        <h2>About Me</h2>
+        <p>I am a student at the University of Engineering & Technology, Peshawar. I am passionate about web technologies, data structures, and digital entrepreneurship through Mohsin Printables.</p>
+
+        <h2>Quick Navigation</h2>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="schedule.html">My Schedule</a>
+            <a href="https://github.com/mohsinbytecoder" target="_blank">GitHub</a>
+        </div>
     </main>
 
     <footer>
-        <p>Department of Computer Science, UET Peshawar</p> </footer>
+        <p>&copy; 2026 Department of Computer Science, UET Peshawar</p>
+    </footer>
 
 </body>
 </html>

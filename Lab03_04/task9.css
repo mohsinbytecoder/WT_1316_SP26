@@ -1,0 +1,5 @@
+.box { width: 100px; height: 100px; background: #52b788; margin: 50px; display: flex; align-items: center; justify-content: center; color: white; transition: 0.5s; cursor: pointer; }
+.rotate:hover { transform: rotate(360deg); }
+.scale:hover { transform: scale(1.5); }
+.skew:hover { transform: skewX(20deg); }
+.translate:hover { transform: translateX(50px); }

@@ -3,15 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Schedule</title>
+    <title>Course Schedule - Lab 03</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f7f4;
+            padding: 40px;
+            color: #2d3436;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1b4d3e;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+        }
+
+        /* Task 12: Professional Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse; /* Removes double borders */
+            background-color: white;
+            border-radius: 12px;
+            overflow: hidden; /* Ensures corners stay rounded */
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        th {
+            background-color: #1b4d3e; /* Forest Green */
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        /* Task 12: Zebra Striping */
+        tr:nth-child(even) {
+            background-color: #f9fdfb;
+        }
+
+        /* Task 12: Hover Effects */
+        tr:hover {
+            background-color: #d1e7dd;
+            transition: background-color 0.3s ease;
+            cursor: default;
+        }
+
+        /* Special Styling for Lunch Break */
+        .break-row {
+            font-style: italic;
+            font-weight: bold;
+            color: #2d6a4f;
+            background-color: #e8f5e9 !important; /* Forces color even on hover/zebra */
+        }
+
+        /* Responsive Design (Task 12 requirement) */
+        @media screen and (max-width: 600px) {
+            table {
+                font-size: 12px;
+            }
+            body {
+                padding: 10px;
+            }
+        }
+    </style>
 </head>
 <body>
 
     <h1>Weekly Course Schedule</h1>
     
-    <table border="1"> <thead>
+    <table>
+        <thead>
             <tr>
-                <th>Time</th> <th>Monday</th> <th>Tuesday</th>
+                <th>Time</th> 
+                <th>Monday</th> 
+                <th>Tuesday</th>
                 <th>Wednesday</th>
                 <th>Thursday</th>
                 <th>Friday</th>
@@ -20,14 +92,32 @@
         <tbody>
             <tr>
                 <td>08:00 - 09:00</td>
-                <td>Web Technologies</td> <td>Operating Systems</td>
+                <td>Web Technologies</td> 
+                <td>Operating Systems</td>
                 <td>Web Technologies</td>
                 <td>Database Systems</td>
                 <td>Software Engineering</td>
             </tr>
             <tr>
+                <td>09:00 - 10:00</td>
+                <td>Data Structures</td> 
+                <td>Formal Languages</td>
+                <td>Calculus II</td>
+                <td>Discrete Math</td>
+                <td>Web Lab</td>
+            </tr>
+            <tr class="break-row">
                 <td>12:00 - 01:00</td>
-                <td colspan="5" align="center">Lunch Break</td> </tr>
+                <td colspan="5" align="center">Lunch Break</td> 
+            </tr>
+            <tr>
+                <td>01:00 - 02:00</td>
+                <td>Computer Networks</td> 
+                <td>AI Ethics</td>
+                <td>Data Science</td>
+                <td>Web Tech</td>
+                <td>Free Slot</td>
+            </tr>
         </tbody>
     </table>
 

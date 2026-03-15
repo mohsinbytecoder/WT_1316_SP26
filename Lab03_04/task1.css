@@ -1,0 +1,10 @@
+/* 1. Universal */ * { box-sizing: border-box; }
+/* 2. Element */ body { font-family: sans-serif; background: #f0f7f4; }
+/* 3. ID */ #main-header { color: #1b4d3e; text-align: center; }
+/* 4. Class */ .highlight { background: yellow; }
+/* 5. Attribute */ input[disabled] { border: 2px solid red; opacity: 0.5; }
+/* 6. Descendant Combinator */ .container p span { color: blue; font-weight: bold; }
+/* 7. Child Combinator */ .container > p { border-left: 5px solid #1b4d3e; padding-left: 10px; }
+/* 8. Pseudo-class */ li:nth-child(odd) { background: #d1e7dd; }
+/* 9. Pseudo-element */ .box::after { content: " → Special Content"; color: #2d6a4f; }
+/* 10. Hover state */ .box:hover { cursor: help; color: #52b788; }

@@ -1,0 +1,9 @@
+.google-font-1 { font-family: 'Playfair Display', serif; font-size: 3rem; color: #1b4d3e; }
+.google-font-2 { font-family: 'Roboto', sans-serif; font-size: 1.2rem; line-height: 1.8; }
+.google-font-3 { font-family: 'Montserrat', sans-serif; font-size: 18px; font-style: italic; }
+.text-effect { 
+    text-transform: uppercase; 
+    letter-spacing: 5px; 
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3); 
+    color: #2d6a4f;
+}
