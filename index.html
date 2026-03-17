@@ -10,14 +10,14 @@
             font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
             color: #2d3436;
-            max-width: 900px;
+            max-width: 1000px; /* Widened slightly for the task grid */
             margin: 0 auto;
             padding: 20px;
-            background-color: #f0f7f4; /* Very light mint background */
+            background-color: #f0f7f4; 
         }
     
         header {
-            background-color: #1b4d3e; /* Deep Forest Green */
+            background-color: #1b4d3e; 
             color: #ffffff;
             padding: 3rem 1rem;
             text-align: center;
@@ -26,52 +26,67 @@
             box-shadow: 0 4px 15px rgba(27, 77, 62, 0.2);
         }
     
+        nav { margin-bottom: 30px; }
+
+        nav h2 { text-align: center; margin-bottom: 15px; font-size: 1.2rem; color: #1b4d3e; }
+
         nav ul {
             background: #ffffff;
             padding: 10px;
-            border-radius: 50px; /* Pill-shaped nav */
+            border-radius: 50px; 
             list-style: none;
             display: flex;
             justify-content: center;
-            gap: 30px;
+            flex-wrap: wrap; /* Allows wrapping on mobile */
+            gap: 20px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.05);
             border: 1px solid #d1e7dd;
         }
     
         nav a {
             text-decoration: none;
-            color: #2d6a4f; /* Mid-tone Green */
+            color: #2d6a4f; 
             font-weight: 600;
             transition: 0.3s;
         }
     
-        nav a:hover {
-            color: #52b788; /* Bright Mint Green on hover */
-        }
+        nav a:hover { color: #52b788; }
     
         section {
             background: #ffffff;
             padding: 30px;
             border-radius: 12px;
             margin-top: 25px;
-            border-left: 5px solid #2d6a4f; /* Green accent border */
+            border-left: 5px solid #2d6a4f; 
             box-shadow: 0 5px 15px rgba(0,0,0,0.03);
         }
-    
-        h2 {
+
+        /* --- NEW: Task Grid Styling for Lab 05 & 06 --- */
+        .task-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .task-link {
+            display: block;
+            text-align: center;
+            padding: 15px 10px;
+            background: #f8f9fa;
+            border: 1px solid #d1e7dd;
+            border-radius: 8px;
+            text-decoration: none;
             color: #1b4d3e;
-            margin-top: 0;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
         }
-    
-        /* Styling for the profile image you just added */
-        img {
-            border-radius: 10px;
-            border: 3px solid #d1e7dd;
-            transition: transform 0.3s ease;
-        }
-    
-        img:hover {
-            transform: scale(1.05); /* Slight zoom on hover */
+
+        .task-link:hover {
+            background: #1b4d3e;
+            color: white;
+            transform: translateY(-3px);
         }
     
         footer {
@@ -91,15 +106,40 @@
     </header>
 
     <nav>
-        <h2>Lab 02 Exercises</h2>
+        <h2>Lab 02: HTML Fundamentals</h2>
         <ul>
-            <li><a href="profile.html">Task 1: Personal Profile</a></li> 
-            <li><a href="schedule.html">Task 2: Course Schedule</a></li> 
-            <li><a href="navigation.html">Task 3: Navigation Menu</a></li> 
-            <li><a href="registration.html">Task 4: Registration Form</a></li> 
-            <li><a href="lab02.html">Basic HTML Elements</a></li>
+            <li><a href="profile.html">Task 1: Profile</a></li> 
+            <li><a href="schedule.html">Task 2: Schedule</a></li> 
+            <li><a href="navigation.html">Task 3: Nav Menu</a></li> 
+            <li><a href="registration.html">Task 4: Registration</a></li> 
         </ul>
     </nav>
+
+    <section>
+        <h2>Lab 05 & 06: Advanced Responsive Layouts</h2>
+        <p>A comprehensive series of 18 tasks demonstrating <strong>CSS Flexbox, Grid, and Media Queries</strong>.</p>
+        
+        <div class="task-grid">
+            <a href="Lab05_06/task1.html" class="task-link">Task 1: Display</a>
+            <a href="Lab05_06/task2.html" class="task-link">Task 2: Floats</a>
+            <a href="Lab05_06/task3.html" class="task-link">Task 3: Position</a>
+            <a href="Lab05_06/task4.html" class="task-link">Task 4: Flex Nav</a>
+            <a href="Lab05_06/task5.html" class="task-link">Task 5: Flex Cards</a>
+            <a href="Lab05_06/task6.html" class="task-link">Task 6: Grid Gallery</a>
+            <a href="Lab05_06/task7.html" class="task-link">Task 7: Holy Grail</a>
+            <a href="Lab05_06/task8.html" class="task-link">Task 8: E-comm Grid</a>
+            <a href="Lab05_06/task9.html" class="task-link">Task 9: Dashboard</a>
+            <a href="Lab05_06/task10.html" class="task-link">Task 10: Breakpoints</a>
+            <a href="Lab05_06/task11.html" class="task-link">Task 11: Mag Grid</a>
+            <a href="Lab05_06/task12.html" class="task-link">Task 12: Flex Form</a>
+            <a href="Lab05_06/task13.html" class="task-link">Task 13: Flex Grail</a>
+            <a href="Lab05_06/task14.html" class="task-link">Task 14: Mosaic</a>
+            <a href="Lab05_06/task15.html" class="task-link">Task 15: Mobile First</a>
+            <a href="Lab05_06/task16.html" class="task-link">Task 16: Full Site</a>
+            <a href="Lab05_06/task17.html" class="task-link">Task 17: Magic Grid</a>
+            <a href="Lab05_06/task18.html" class="task-link">Task 18: Grid Areas</a>
+        </div>
+    </section>
 
     <section>
         <h2>About This Project</h2>

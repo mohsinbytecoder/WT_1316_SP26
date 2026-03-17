@@ -1,0 +1,39 @@
+/* task2.css - Standalone Float Styles */
+
+body { font-family: 'Georgia', serif; line-height: 1.6; background: #fdfdfd; padding: 20px; }
+
+.mag-header { border-bottom: 3px double #1b4d3e; margin-bottom: 20px; text-align: center; }
+
+/* The Clearfix: This prevents the container from collapsing */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.sidebar {
+    float: left;
+    width: 25%;
+    background: #e9ecef;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+.main-content {
+    float: right;
+    width: 70%;
+}
+
+.float-img {
+    float: left;
+    margin: 0 15px 10px 0;
+    border: 1px solid #1b4d3e;
+}
+
+.mag-footer {
+    margin-top: 30px;
+    padding: 10px;
+    background: #1b4d3e;
+    color: white;
+    text-align: center;
+}

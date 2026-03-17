@@ -1,0 +1,27 @@
+/* task16.css - Full Website Layout */
+body { margin: 0; font-family: sans-serif; display: flex; flex-direction: column; min-height: 100vh; }
+
+/* Flexbox Nav */
+.nav { display: flex; justify-content: space-between; padding: 20px; background: #1b4d3e; color: white; }
+.menu { display: flex; list-style: none; gap: 20px; margin: 0; }
+
+/* Grid Main Section */
+.grid-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    flex: 1; /* Fills remaining height */
+}
+
+.hero { grid-column: 1 / 3; background: #d1e7dd; padding: 40px; text-align: center; font-size: 2rem; }
+.content { padding: 20px; background: white; }
+.sidebar { padding: 20px; background: #f4f4f4; border-left: 1px solid #ddd; }
+.footer { padding: 20px; background: #2c3e50; color: white; text-align: center; }
+
+/* MOBILE: Stack Everything */
+@media (max-width: 768px) {
+    .nav { flex-direction: column; text-align: center; }
+    .menu { flex-direction: column; padding-top: 15px; }
+    .grid-container { grid-template-columns: 1fr; }
+    .hero { grid-column: 1; }
+    .sidebar { border-left: none; border-top: 1px solid #ddd; }
+}

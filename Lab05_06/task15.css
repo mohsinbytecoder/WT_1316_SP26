@@ -1,0 +1,23 @@
+/* task15.css - Mobile First Design */
+body { margin: 0; font-family: sans-serif; text-align: center; }
+
+/* MOBILE STYLES (Default) */
+.hero { padding: 40px 20px; background: #fdfdfd; }
+.hero-image img { width: 100%; border-radius: 10px; margin-top: 20px; }
+h1 { font-size: 2rem; color: #1b4d3e; }
+button { background: #1b4d3e; color: white; padding: 15px 30px; border: none; border-radius: 5px; }
+
+/* DESKTOP STYLES (Added after) */
+@media (min-width: 1024px) {
+    .hero {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        padding: 80px;
+        max-width: 1200px; margin: auto;
+    }
+    .hero-content { flex: 1; }
+    .hero-image { flex: 1; }
+    .hero-image img { margin-top: 0; }
+    h1 { font-size: 3.5rem; }
+}

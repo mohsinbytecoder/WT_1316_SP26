@@ -1,0 +1,29 @@
+/* task11.css - Standalone Magazine Styles */
+
+body { padding: 20px; font-family: 'Times New Roman', serif; background: #eee; }
+
+.magazine-grid {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.featured {
+    grid-column: span 2;
+    grid-row: span 2;
+    background: #1b4d3e;
+    color: white;
+    padding: 30px;
+}
+
+.news {
+    background: white;
+    padding: 20px;
+    border-bottom: 3px solid #1b4d3e;
+}
+
+/* Mobile: Single Column */
+@media (max-width: 768px) {
+    .magazine-grid { grid-template-columns: 1fr; }
+    .featured { grid-column: auto; grid-row: auto; }
+}

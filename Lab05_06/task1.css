@@ -1,0 +1,49 @@
+/* task1.css - Standalone Styles for Task 1 */
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 { color: #1b4d3e; text-align: center; }
+
+.container {
+    background: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Common styling for the demo boxes */
+.block-box, .inline-box, .ib-box {
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+/* BLOCK: Takes full width */
+.block-box {
+    display: block;
+    background-color: #1b4d3e;
+    margin-bottom: 10px;
+}
+
+/* INLINE: Side-by-side, ignores width/height */
+.inline-box {
+    display: inline;
+    background-color: #2d6a4f;
+    width: 200px; /* Ignored */
+    height: 100px; /* Ignored */
+}
+
+/* INLINE-BLOCK: Side-by-side, allows width/height */
+.ib-box {
+    display: inline-block;
+    background-color: #52b788;
+    width: 120px; /* Works */
+    height: 50px;  /* Works */
+    text-align: center;
+}

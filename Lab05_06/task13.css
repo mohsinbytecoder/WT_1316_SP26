@@ -1,0 +1,17 @@
+/* task13.css - Flexbox Holy Grail */
+body { display: flex; flex-direction: column; min-height: 100vh; margin: 0; font-family: sans-serif; }
+header, footer { background: #1b4d3e; color: white; padding: 20px; text-align: center; }
+
+.main-body {
+    display: flex;
+    flex: 1; /* This pushes the footer to the bottom */
+}
+
+.side { width: 200px; background: #d1e7dd; padding: 20px; }
+.content { flex: 1; background: white; padding: 20px; }
+
+/* Mobile: Stack them vertically */
+@media (max-width: 600px) {
+    .main-body { flex-direction: column; }
+    .side { width: 100%; }
+}

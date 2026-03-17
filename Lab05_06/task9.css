@@ -1,0 +1,43 @@
+/* task9.css - Standalone Dashboard Styles */
+
+body { margin: 0; font-family: sans-serif; }
+
+.dashboard-wrapper {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 240px 1fr;
+    grid-template-rows: 60px 1fr;
+}
+
+.sidebar {
+    grid-row: 1 / 3; /* Spans from top to bottom */
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+}
+
+.top-nav {
+    background: white;
+    border-bottom: 1px solid #ddd;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+.main-stats {
+    background: #f0f2f5;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap; /* Flex used inside Grid! */
+    gap: 20px;
+}
+
+.stat-card {
+    flex: 1 1 200px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    text-align: center;
+    font-weight: bold;
+}

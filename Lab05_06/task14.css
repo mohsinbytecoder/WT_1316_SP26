@@ -1,0 +1,19 @@
+/* task14.css - Mosaic/Bento Layout */
+body { background: #f0f0f0; padding: 20px; font-family: sans-serif; }
+.mosaic-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+    gap: 15px;
+    max-width: 900px; margin: auto;
+}
+
+.box { background: #1b4d3e; color: white; display: flex; align-items: center; justify-content: center; border-radius: 8px; font-weight: bold; }
+
+.large { grid-row: span 2; grid-column: span 2; background: #2d6a4f; }
+.wide { grid-column: span 3; background: #52b788; height: 100px; }
+
+@media (max-width: 600px) {
+    .mosaic-container { grid-template-columns: 1fr; grid-auto-rows: auto; }
+    .large, .wide { grid-column: span 1; grid-row: span 1; height: 200px; }
+}

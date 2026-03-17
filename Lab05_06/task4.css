@@ -1,0 +1,38 @@
+/* task4.css - Standalone Flexbox Nav Styles */
+
+body { font-family: 'Segoe UI', sans-serif; margin: 0; background-color: #f8f9fa; }
+
+.navbar {
+    display: flex; /* Makes this a flex container */
+    justify-content: space-between; /* Space items: Left, Center, Right */
+    align-items: center; /* Vertically centers the items */
+    background-color: #1b4d3e; /* Forest Green */
+    padding: 15px 30px;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 25px; /* Modern way to add space between flex items */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-btn {
+    background: white;
+    color: #1b4d3e;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.content-padding { padding: 40px; text-align: center; }

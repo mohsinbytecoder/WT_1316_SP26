@@ -1,0 +1,37 @@
+/* task5.css - Standalone Flexbox Card Styles */
+
+body { font-family: sans-serif; background: #e9ecef; padding: 40px; }
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to jump to the next line on small screens */
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    
+    /* These 3 lines make the button stay at the bottom */
+    display: flex;
+    flex-direction: column;
+}
+
+.card p {
+    flex-grow: 1; /* This pushes the button to the bottom of the card */
+    color: #666;
+}
+
+.card-btn {
+    background-color: #1b4d3e;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}

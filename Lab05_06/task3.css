@@ -1,0 +1,42 @@
+/* task3.css - Standalone Positioning Styles */
+
+body { font-family: sans-serif; margin: 0; padding: 0; background: #f0f0f0; height: 2000px; /* Extra height to allow scrolling */ }
+
+/* FIXED: Remains at the top of the viewport */
+.fixed-nav {
+    position: fixed;
+    top: 0; width: 100%;
+    background: #1b4d3e; color: white;
+    padding: 20px; text-align: center;
+    z-index: 1000;
+}
+
+.spacer { margin-top: 100px; text-align: center; padding: 50px; }
+
+/* RELATIVE & ABSOLUTE */
+.parent-relative {
+    position: relative;
+    width: 400px; height: 200px;
+    background: #fff; border: 2px solid #1b4d3e;
+    margin: 50px auto; padding: 20px;
+}
+
+.child-absolute {
+    position: absolute;
+    bottom: 10px; right: 10px;
+    background: #e67e22; color: white;
+    padding: 10px; font-size: 12px;
+}
+
+/* STICKY: Sticks to the top when it hits the 80px mark */
+.sticky-box {
+    position: sticky;
+    top: 60px; /* Adjust based on fixed nav height */
+    background: #52b788;
+    color: white;
+    padding: 15px;
+    width: 80%; margin: 20px auto;
+    text-align: center;
+}
+
+.long-content { padding: 100px; text-align: center; }

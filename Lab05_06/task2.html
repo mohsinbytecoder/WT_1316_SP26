@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2: Float Layout - Mohsin</title>
+    <link rel="stylesheet" href="task2.css">
+</head>
+<body>
+
+    <header class="mag-header">
+        <h1>MOHSIN PRINTABLES GAZETTE</h1>
+    </header>
+
+    <div class="container clearfix">
+        <aside class="sidebar">
+            <h3>Top Categories</h3>
+            <ul>
+                <li>Digital Planners</li>
+                <li>Wall Art</li>
+                <li>Resume Templates</li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <h2>The Art of Minimalist Design</h2>
+            <img src="https://via.placeholder.com/150" alt="Design" class="float-img">
+            <p>This image is floated to the left of this paragraph. Notice how the text wraps around the edges of the image box. This was the primary way to create multi-column layouts before Flexbox and Grid existed.</p>
+            <p>Using floats requires careful management of widths and "clearing" the container so that the footer stays at the bottom where it belongs.</p>
+        </main>
+    </div>
+
+    <footer class="mag-footer">
+        <p>&copy; 2026 Lab Exercise - Float Implementation</p>
+    </footer>
+
+</body>
+</html>

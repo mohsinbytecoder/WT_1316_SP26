@@ -1,0 +1,29 @@
+/* task8.css - Standalone E-commerce Grid */
+
+body { font-family: sans-serif; padding: 20px; background: #f9f9f9; }
+
+.product-grid {
+    display: grid;
+    /* auto-fill creates as many columns as will fit, min 250px each */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background: white;
+    height: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #1b4d3e;
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    border-color: #52b788;
+    cursor: pointer;
+}

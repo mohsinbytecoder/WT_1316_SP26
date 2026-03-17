@@ -1,0 +1,36 @@
+/* task7.css - Standalone Holy Grail Layout */
+
+body { font-family: sans-serif; margin: 0; background: #f4f4f4; }
+
+.grid-container {
+    display: grid;
+    height: 100vh; /* Full height of the screen */
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 80px 1fr 60px;
+    /* This defines exactly where each piece goes */
+    grid-template-areas: 
+        "head head head"
+        "left main right"
+        "foot foot foot";
+    gap: 10px;
+}
+
+.header { grid-area: head; background: #1b4d3e; color: white; display: flex; align-items: center; justify-content: center; }
+.left-sidebar { grid-area: left; background: #d1e7dd; padding: 20px; }
+.main-content { grid-area: main; background: white; padding: 20px; }
+.right-sidebar { grid-area: right; background: #d1e7dd; padding: 20px; }
+.footer { grid-area: foot; background: #2c3e50; color: white; display: flex; align-items: center; justify-content: center; }
+
+/* Mobile View: Everything stacks in 1 column */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas: 
+            "head"
+            "main"
+            "left"
+            "right"
+            "foot";
+    }
+}

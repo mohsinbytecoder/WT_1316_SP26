@@ -1,0 +1,38 @@
+/* task18.css - Grid Template Areas */
+body { margin: 0; font-family: sans-serif; font-weight: bold; color: white; }
+
+.layout {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 60px 50px 1fr 60px;
+    /* The Map: Each letter represents an area */
+    grid-template-areas: 
+        "h h h"
+        "n n n"
+        "a m m"
+        "f f f";
+    gap: 5px;
+}
+
+.h { grid-area: h; background: #1b4d3e; }
+.n { grid-area: n; background: #2d6a4f; }
+.m { grid-area: m; background: #40916c; color: black; padding: 20px; }
+.a { grid-area: a; background: #52b788; }
+.f { grid-area: f; background: #081c15; }
+
+/* Check the map below: On mobile, we change the letters! */
+@media (max-width: 600px) {
+    .layout {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "h"
+            "n"
+            "m"
+            "a"
+            "f";
+    }
+}
+
+.h, .n, .m, .a, .f { display: flex; align-items: center; justify-content: center; }
